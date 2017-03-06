@@ -46,14 +46,30 @@
 
 body {
   font-family: 'proxima_nova_rgregular';
+  font-size: 15px;
+  font-weight: 400;
   margin: 0;
   padding: 0;
+  color: #000;
 }
 
 .container {
   position: relative;
   width: 1180px;
   margin: 0 auto;
+}
+
+h2 {
+  font-family: 'proxima_nova_blblack';
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h2 > span {
+  font-family: 'proxima_nova_rgregular';
+  font-weight: 300;
 }
 
 ul {
@@ -182,9 +198,71 @@ a.open-shop {
 
 /* Create shop */
 
-.create-shop li {
+.create-shop h2 {
+  position: relative;
+  width: 840px;
+  padding-top: 12px;
+}
+
+.create-shop h2::after {
+  position: absolute;
+  bottom: -92px;
+  left: -71px;
+  content: "";
+  display: block;
+  width: 980px;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.create-shop ul {
+  margin-top: 170px;
+  margin-bottom: 175px;
+}
+
+.create-shop__item {
+  position: relative;
   display: inline-block;
-  width: 100px;
+  vertical-align: top;
+  width: 190px;
+  line-height: 23px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.create-shop__item::before {
+  position: absolute;
+  top: -121px;
+  left: 54px;
+  content: "";
+  display: block;
+  width: 84px;
+  height: 84px;
+  background-image: url("../images/sprite.fw.png");
+}
+
+.create-shop__item--1 {
+  margin-left: 46px;
+}
+
+.create-shop__item--1::before {
+  background-position: -336px -100px;
+}
+
+.create-shop__item--2::before {
+  background-position: -168px -100px;
+}
+
+.create-shop__item--3::before {
+  background-position: 0 -100px;
+}
+
+.create-shop__item--4::before {
+  background-position: -252px -100px;
+}
+
+.create-shop__item--5::before {
+  background-position: -84px -100px;
 }
 
 /* Partner program */
