@@ -265,6 +265,50 @@ a.open-shop {
   background-position: -84px -100px;
 }
 
+/* Control panel */
+
+.control-panel h2 {
+  width: 475px;
+  text-align: left;
+  margin-left: 117px;
+  margin-bottom: 24px;
+}
+
+.control-panel ul {
+  position: relative;
+  width: 575px;
+  margin-bottom: 120px;
+  padding-left: 119px;
+}
+
+.control-panel ul::after {
+  position: absolute;
+  top: -179px;
+  right: -536px;
+  content: "";
+  display: block;
+  width: 410px;
+  height: 326px;
+  background-image: url("../images/gadgets.png");
+}
+
+.control-panel li {
+  position: relative;
+  margin-bottom: 7px;
+}
+
+.control-panel li::before {
+  position: absolute;
+  top: 9px;
+  left: -10px;
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
 /* Partner program */
 
 .partner-program__sale li {
