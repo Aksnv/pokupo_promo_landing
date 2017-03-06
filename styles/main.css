@@ -1,0 +1,95 @@
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Header */
+
+.header__logo {
+  float: left;
+}
+
+.header__menu {
+  float: right;
+}
+
+.header__menu li {
+  display: inline-block;
+}
+
+.header__promo {
+  clear: both;
+}
+
+/* Create shop */
+
+.create-shop li {
+  display: inline-block;
+  width: 100px;
+}
+
+/* Partner program */
+
+.partner-program__sale li {
+  display: inline-block;
+  width: 200px;
+}
+
+.partner-program__income li {
+  display: inline-block;
+  width: 100px;
+}
+
+/* Information channels */
+
+.information-channels__top-block {
+  width: 400px;
+}
+
+.information-channels__top-block--youtube {
+  float: left;
+}
+
+.information-channels__top-block--why {
+  float: right;
+}
+
+.information-channels__top-block--android {
+  float: right;
+}
+
+.information-channels__top-block--digest {
+  clear: both;
+}
+
+.information-channels__bottom-block {
+  float: left;
+  width: 200px;
+}
+
+.information-channels__bottom-block--social ul:first-child li {
+  display: inline-block;
+}
+
+/* Synergetic organization */
+
+.synergetic-organization {
+  clear: both;
+}
+
+/* Updating */
+
+.updating__social li {
+  display: inline-block;
+}
+
+/* Footer */
+
+.footer__block {
+  float: left;
+  width: 300px;
+}
