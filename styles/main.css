@@ -868,6 +868,43 @@ a.golos-link {
   background-position: center top;
 }
 
+.synergetic-organization h2 {
+  width: 535px;
+  margin: 0 auto;
+  padding-top: 309px;
+  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 12px;
+}
+
+.synergetic-organization p {
+  width: 630px;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0 auto;
+  padding-left: 102px;
+}
+
+.synergetic-organization p:nth-of-type(1) {
+  margin-bottom: 25px;
+}
+
+.synergetic-organization a {
+  display: inline-block;
+  font-family: 'proxima_nova_rgbold';
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 25px;
+  text-decoration: none;
+  padding-top: 7px;
+  border-bottom: 1px solid #dfb086;
+  color: #fa7b2e;
+}
+
+.synergetic-organization a:hover {
+  opacity: 0.8;
+}
+
 /* Our mission */
 
 .our-mission {
