@@ -277,8 +277,8 @@ a.open-shop {
 .control-panel ul {
   position: relative;
   width: 575px;
-  margin-bottom: 120px;
-  padding-left: 119px;
+  margin-bottom: 173px;
+  padding-left: 118px;
 }
 
 .control-panel ul::after {
@@ -311,14 +311,169 @@ a.open-shop {
 
 /* Partner program */
 
-.partner-program__sale li {
-  display: inline-block;
-  width: 200px;
+.partner-program__top {
+  height: 608px;
+  background-image: url("../images/bg-middle.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
 }
 
-.partner-program__income li {
+.partner-program__top h2 {
+  position: relative;
+  width: 975px;
+  font-size: 50px;
+  line-height: 55px;
+  text-shadow: 0 28px 73px rgba(0, 0, 0, 0.36);
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-right: 46px;
+}
+
+.partner-program__top h2 > span {
+  font-family: 'proxima_nova_ltlight';
+  font-weight: 100;
+}
+
+.partner-program__bottom {
+  background-color: #efece7;
+}
+
+.partner-program__sale {
+  margin-bottom: 100px;
+}
+
+.partner-program__sale ul {
+  position: relative;
+  margin-top: 0;
+  padding-top: 48px;
+}
+
+.partner-program__sale ul::after {
+    position: absolute;
+    bottom: -52px;
+    left: 98px;
+    content: "";
+    display: block;
+    width: 980px;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.partner-program__sale-item {
+  position: relative;
   display: inline-block;
+  vertical-align: top;
+  width: 295px;
+  line-height: 25px;
+}
+
+.partner-program__sale-item::before {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  content: "";
+  font-family: 'proxima_nova_ltlight';
+  font-size: 68px;
+  font-weight: 300;
+  color: #fea700;
+}
+
+.partner-program__sale-item--1 {
+  width: 270px;
+  margin-left: 92px;
+  margin-right: 118px;
+}
+
+.partner-program__sale-item--1::before {
+  left: -35px;
+  content: "1";
+}
+
+.partner-program__sale-item--2 {
+  margin-right: 92px;
+}
+
+.partner-program__sale-item--2::before {
+  left: -54px;
+  content: "2";
+}
+
+.partner-program__sale-item--3 {
+  width: 245px;
+}
+
+.partner-program__sale-item--3::before {
+  left: -52px;
+  content: "3";
+}
+
+.partner-program__income h2 {
+  margin-bottom: 175px;
+}
+
+.partner-program__income h2::after {
+  position: absolute;
+  left: 216px;
+  bottom: 192px;
+  content: "";
+  display: block;
+  width: 750px;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.partner-program__income ul {
+  padding-bottom: 66px;
+}
+
+.partner-program__income-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 285px;
+  line-height: 25px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.partner-program__income-item::before {
+  position: absolute;
+  top: -126px;
+  content: "";
+  display: block;
   width: 100px;
+  height: 100px;
+  background-image: url("../images/sprite.fw.png");
+}
+
+.partner-program__income-item--1 {
+  margin-left: 96px;
+  margin-right: 120px;
+}
+
+.partner-program__income-item--1::before {
+  left: 95px;
+  background-position: -200px 0;
+}
+
+.partner-program__income-item--2 {
+  width: 160px;
+  margin-right: 175px;
+}
+
+.partner-program__income-item--2::before {
+  left: 35px;
+  background-position: -100px 0;
+}
+
+.partner-program__income-item--3 {
+  width: 180px;
+}
+
+.partner-program__income-item--3::before {
+  left: 44px;
+  background-position: 0 0;
 }
 
 /* Information channels */
