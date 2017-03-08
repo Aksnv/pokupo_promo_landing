@@ -81,6 +81,20 @@ ul {
   white-space: nowrap;
 }
 
+.inline-link {
+  font-family: 'proxima_nova_blblack';
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 30px;
+  text-decoration: none;
+  border-bottom: 1px solid #fcbd96;
+  color: #fa7b2e;
+}
+
+.inline-link:hover {
+  opacity: 0.8;
+}
+
 /* Header */
 
 .header {
@@ -949,13 +963,84 @@ a.golos-link {
   background-position: -693px 0;
 }
 
+/* Our team */
+
+.our-team {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.our-team h2 {
+  position: relative;
+  width: 220px;
+  padding-top: 77px;
+  padding-bottom: 13px;
+}
+
+.our-team h2::before {
+  position: absolute;
+  top: -57px;
+  left: 56px;
+  content: "";
+  display: block;
+  width: 107px;
+  height: 154px;
+  background-image: url("../images/sprite.fw.png");
+  background-position: -793px 0;
+}
+
+.our-team h3 {
+  position: relative;
+  font-family: 'proxima_nova_blblack';
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.our-team h3::before {
+  position: absolute;
+  top: -51px;
+  left: calc(50% - 42px);
+  content: "";
+  display: block;
+  width: 85px;
+  height: 8px;
+  background-image: url("../images/sprite.fw.png");
+  background-position: -310px -84px;
+}
+
+.our-team p {
+  width: 758px;
+  line-height: 25px;
+  margin: 0 auto;
+  margin-bottom: 93px;
+}
+
+.our-team p:last-of-type {
+  margin-bottom: 2px;
+}
+
 /* Updating */
+
+.updating {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #efece7;
+}
 
 .updating__social li {
   display: inline-block;
 }
 
 /* Footer */
+
+.footer {
+  overflow: hidden;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
 
 .footer__block {
   float: left;
