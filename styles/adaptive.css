@@ -369,4 +369,19 @@
     left: 334px;
   }
 
+  /* Synergetic organization */
+
+  .synergetic-organization {
+    background-position: -477px top;
+  }
+
+  .synergetic-organization h2 {
+    padding-top: 313px;
+    padding-left: 45px;
+  }
+
+  .synergetic-organization p {
+    padding-left: 97px;
+  }
+
 }
