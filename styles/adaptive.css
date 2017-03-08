@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1179px) {
   
   .container {
     width: 670px;
@@ -418,6 +418,23 @@
   .our-team p {
     width: 600px;
     margin-bottom: 87px;
+  }
+
+  /* Footer */
+
+  .footer__block--email {
+    width: 192px;
+    margin-left: 7px;
+    margin-right: 87px;
+  }
+
+  .footer__block--skype {
+    width: 96px;
+    margin-right: 116px;
+  }
+
+  .footer__block--phone {
+    width: 167px;
   }
 
 }
