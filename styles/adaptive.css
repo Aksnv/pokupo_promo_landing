@@ -507,7 +507,7 @@
   /* Create shop */
 
   .create-shop {
-    min-height: 900px;
+    min-height: 969px;
   }
 
   .create-shop h2 {
@@ -557,5 +557,35 @@
     left: 55px;
   }
 
+  /* Control panel */
+
+  .control-panel {
+    min-height: 410px;
+  }
+
+  .control-panel h2 {
+    width: 300px;
+    font-size: 25px;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .control-panel ul {
+    width: 300px;
+    padding-left: 9px;
+  }
+
+  .control-panel ul::after {
+    top: 156px;
+    right: -25px;
+    width: 324px;
+    height: 258px;
+    background-size: 324px 258px;
+  }
+
+  .control-panel li {
+    line-height: 24px;
+    margin-bottom: 2px;
+  }
 
 }
