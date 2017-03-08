@@ -491,6 +491,10 @@ a.open-shop {
   background-position: -200px 0;
 }
 
+.partner-program__income-item--1 span {
+  display: block;
+}
+
 .partner-program__income-item--2 {
   width: 160px;
   margin-right: 175px;
