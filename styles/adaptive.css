@@ -889,7 +889,21 @@
   .our-mission p::before {
     top: -208px;
     left: 101px;
+  }
 
+  /* Our team */
+
+  .our-team {
+    padding-bottom: 41px;
+  }
+
+  .our-team p {
+    width: 300px;
+    margin-bottom: 82px;
+  }
+
+  .our-team h3 {
+    line-height: 27px;
   }
 
 }
