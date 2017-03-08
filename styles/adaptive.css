@@ -448,6 +448,7 @@
   /* Header */
 
   .header {
+    height: 857px;
     background-position: -337px top;
   }
 
@@ -502,5 +503,59 @@
     width: 300px;
     margin-left: 0;
   }
+
+  /* Create shop */
+
+  .create-shop {
+    min-height: 900px;
+  }
+
+  .create-shop h2 {
+    width: 300px;
+    font-size: 25px;
+  }
+
+  .create-shop h2::before {
+    display: none;
+  }
+
+  .create-shop span {
+    top: 0;
+  }
+
+  .create-shop span.nowrap {
+    font-family: 'proxima_nova_blblack';
+    font-weight: 900;
+  }
+
+  .create-shop__item::before {
+    top: -100px;
+  }
+
+  .create-shop__item--1 {
+    top: 297px;
+    left: 9px;
+  }
+
+  .create-shop__item--2 {
+    top: 463px;
+    left: 55px;
+  }
+
+  .create-shop__item--3 {
+    top: 629px;
+    left: 55px;
+  }
+
+  .create-shop__item--4 {
+    top: 818px;
+    left: 55px;
+  }
+
+  .create-shop__item--5 {
+    top: 1008px;
+    left: 55px;
+  }
+
 
 }
