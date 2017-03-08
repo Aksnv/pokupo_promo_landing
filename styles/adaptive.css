@@ -507,11 +507,11 @@
   /* Create shop */
 
   .create-shop {
-    min-height: 969px;
+    min-height: 938px;
   }
 
   .create-shop h2 {
-    width: 300px;
+    width: 305px;
     font-size: 25px;
   }
 
@@ -533,27 +533,27 @@
   }
 
   .create-shop__item--1 {
-    top: 297px;
+    top: 266px;
     left: 9px;
   }
 
   .create-shop__item--2 {
-    top: 463px;
+    top: 432px;
     left: 55px;
   }
 
   .create-shop__item--3 {
-    top: 629px;
+    top: 598px;
     left: 55px;
   }
 
   .create-shop__item--4 {
-    top: 818px;
+    top: 787px;
     left: 55px;
   }
 
   .create-shop__item--5 {
-    top: 1008px;
+    top: 977px;
     left: 55px;
   }
 
@@ -564,10 +564,22 @@
   }
 
   .control-panel h2 {
+    position: relative;
     width: 300px;
     font-size: 25px;
     margin-left: 0;
     margin-bottom: 30px;
+  }
+
+  .control-panel h2::before {
+    position: absolute;
+    top: -46px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1px;
+    background-color: #ccc;
   }
 
   .control-panel ul {
@@ -586,6 +598,88 @@
   .control-panel li {
     line-height: 24px;
     margin-bottom: 2px;
+  }
+
+  /* Partner program */
+
+  .partner-program__top {
+    height: 421px;
+    background-size: 1346px 421px;
+  }
+
+  .partner-program__top h2 {
+    width: 301px;
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 36px;
+    padding-right: 0;
+  }
+
+  .partner-program__sale {
+    margin-bottom: 38px;
+  }
+
+  .partner-program__sale ul {
+    padding-top: 44px;
+  }
+
+  .partner-program__sale-item {
+    width: 255px;
+    margin-left: 52px;
+    margin-bottom: 25px;
+  }
+
+  .partner-program__sale-item::before {
+    top: 19px;
+  }
+
+  .partner-program__income h2 {
+    width: 332px;
+    font-size: 25px;
+    margin-bottom: 135px;
+  }
+
+  .partner-program__income h2::after {
+    display: none;
+  }
+
+  .partner-program__income ul {
+    padding-bottom: 41px;
+  }
+
+  .partner-program__income-item::before {
+    top: -117px;
+  }
+
+  .partner-program__income-item--1,
+  .partner-program__income-item--2 {
+    margin-right: 0;
+  }
+
+  .partner-program__income-item--1 {
+    margin-left: 52px;
+    margin-bottom: 149px;
+  }
+
+  .partner-program__income-item--1::before {
+    top: -117px;
+  }
+
+  .partner-program__income-item--2 {
+    margin-left: 69px;
+    margin-bottom: 147px;
+  }
+
+  .partner-program__income-item--2::before {
+    left: 31px;
+  }
+
+  .partner-program__income-item--3 {
+    margin-left: 61px;
+  }
+
+  .partner-program__income-item--3::before {
+    left: 39px;
   }
 
 }
