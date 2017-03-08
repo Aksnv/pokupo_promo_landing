@@ -130,8 +130,21 @@
 
   /* Control panel */
 
+  .control-panel {
+    min-height: 447px;
+  }
+
   .control-panel h2 {
-    
+    text-align: center;
+  }
+
+  .control-panel ul {
+    padding-left: 107px;
+  }
+
+  .control-panel ul::after {
+    top: 122px;
+    right: 30px;
   }
 
 }
