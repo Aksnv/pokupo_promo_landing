@@ -8,7 +8,7 @@
 
   .header {
     height: 874px;
-    background-position: -235px top;
+    background-position: -185px top;
   }
 
   .header__logo {
@@ -92,7 +92,17 @@
   .create-shop span {
     position: relative;
     top: -2px;
-    display: block;
+    display: block; 
+  }
+
+  .create-shop span.nowrap {
+    top: 0;
+    display: inline;
+  }
+
+  .create-shop span.nowrap {
+    font-family: 'proxima_nova_blblack';
+    font-weight: 900;
   }
 
   .create-shop__item {
@@ -136,6 +146,11 @@
 
   .control-panel h2 {
     text-align: center;
+    padding-right: 10px;
+  }
+
+  .control-panel h2 > span {
+    padding-right: 24px;
   }
 
   .control-panel ul {
@@ -372,7 +387,7 @@
   /* Synergetic organization */
 
   .synergetic-organization {
-    background-position: -477px top;
+    background-position: -427px top;
   }
 
   .synergetic-organization h2 {
@@ -519,15 +534,6 @@
     display: none;
   }
 
-  .create-shop span {
-    top: 0;
-  }
-
-  .create-shop span.nowrap {
-    font-family: 'proxima_nova_blblack';
-    font-weight: 900;
-  }
-
   .create-shop__item::before {
     top: -100px;
   }
@@ -567,8 +573,14 @@
     position: relative;
     width: 300px;
     font-size: 25px;
+    text-align: center;
     margin-left: 0;
     margin-bottom: 30px;
+    padding-right: 0
+  }
+
+  .control-panel h2 > span {
+    padding-right: 0;
   }
 
   .control-panel h2::before {
@@ -634,6 +646,8 @@
   }
 
   .partner-program__income h2 {
+    position: relative;
+    left: -13px;
     width: 332px;
     font-size: 25px;
     margin-bottom: 135px;
@@ -842,10 +856,11 @@
   .synergetic-organization {
     height: 657px;
     background-size: 1347px 561px;
-    background-position: -353px top;
+    background-position: -362px top;
   }
 
   .synergetic-organization h2 {
+    width: 300px;
     font-size: 20px;
     padding-top: 145px;
     padding-left: 0;

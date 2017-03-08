@@ -299,6 +299,11 @@ a.open-shop {
   background-position: -84px -100px;
 }
 
+.create-shop span.nowrap {
+  font-family: 'proxima_nova_blblack';
+  font-weight: 900;
+}
+
 /* Control panel */
 
 .control-panel h2 {
