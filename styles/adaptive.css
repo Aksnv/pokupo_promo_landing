@@ -384,4 +384,21 @@
     padding-left: 97px;
   }
 
+  /* Our mission */
+
+  .our-mission {
+    top: -140px;
+    height: 546px;
+  }
+
+  .our-mission p {
+    width: 620px;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+
+  .our-mission p::before {
+    left: 259px;
+  }
+
 }
