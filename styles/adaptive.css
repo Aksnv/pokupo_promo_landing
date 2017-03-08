@@ -906,4 +906,41 @@
     line-height: 27px;
   }
 
+  /* Updating */
+
+  .updating {
+    padding-bottom: 86px;
+  }
+
+  .updating h2 {
+    font-size: 20px;
+  }
+
+  .updating p {
+    line-height: 28px;
+    margin-top: 3px;
+    margin-bottom: 7px;
+  }
+
+  .updating span {
+    padding-top: 5px;
+  }
+
+  .updating em {
+    display: block;
+    font-style: normal;
+  }
+
+  .updating__hashtag {
+    width: 299px;
+  }
+
+  .updating__hashtag h3 {
+    font-size: 30px;
+  }
+
+  .updating__social {
+    top: 271px;
+  }
+
 }
