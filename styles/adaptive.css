@@ -232,4 +232,141 @@
     margin-right: 0;
   }
 
+  /* Information channels */
+
+  .information-channels h2 {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 46px;
+  }
+
+  .information-channels__top-block--youtube,
+  .information-channels__top-block--why,
+  .information-channels__top-block--android {
+    float: none;
+  }
+
+  .information-channels__top-block--youtube {
+    top: 215px;
+  }
+
+  .information-channels__top-block--youtube::after {
+    top: 51px;
+    left: 259px;
+    width: 451px;
+    height: 396px;
+    background-image: url(../images/youtube_750.png);
+  }
+
+  .information-channels__top-block--youtube h2,
+  .information-channels__top-block--android h2,
+  .information-channels__top-block--digest h2 {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .information-channels__top-block--youtube h2 {
+    padding-top: 42px;
+  }
+
+  .information-channels__top-block--youtube ul {
+    margin-top: 12px;
+    padding-left: 0;
+  }
+
+  .information-channels__top-block--why {
+    position: absolute;
+    top: 111px;
+    left: 183px;
+    width: 310px;
+  }
+
+  .information-channels__top-block--why span {
+    position: relative;
+    top: 10px;
+    display: block;
+  }
+
+  .information-channels__top-block--android::before {
+    top: 206px;
+  }
+
+  .information-channels__top-block--android::after {
+    top: 55px;
+    left: 289px;
+    width: 421px;
+    height: 585px;
+    background-image: url(../images/android_750.png);
+  }
+
+  .information-channels__top-block--android h2 {
+    padding-top: 75px;
+  }
+
+  .information-channels__top-block--digest {
+    margin-left: 0;
+  }
+
+  .information-channels__top-block--digest::before {
+    top: 178px;
+    left: 198px;
+  }
+
+  .information-channels__top-block--digest::after {
+    top: 115px;
+    left: 272px;
+    width: 438px;
+    height: 446px;
+    background-image: url(../images/digest_750.png);
+  }
+
+  .information-channels__top-block--digest h2 {
+    padding-top: 98px;
+  }
+
+  .information-channels__top-block--digest ul {
+    width: 330px;
+    padding-left: 0;
+  }
+
+  .information-channels__bottom {
+    position: relative;
+    min-height: 625px;
+    margin-bottom: 27px;
+  }
+
+  .information-channels__bottom-block {
+    float: none;
+  }
+  
+  .information-channels__bottom-block--social,
+  .information-channels__bottom-block--blog,
+  .information-channels__bottom-block--habr,
+  .information-channels__bottom-block--golos {
+    position: absolute;
+  }
+
+  .information-channels__bottom-block--social {
+    top: 317px;
+    left: 0;
+  }
+
+  .information-channels__bottom-block--blog {
+    top: 22px;
+    left: 0;
+  }
+
+  .information-channels__bottom-block--habr {
+    top: 317px;
+    left: 346px;
+  }
+
+  .information-channels__bottom-block--golos {
+    top: 22px;
+    left: 334px;
+  }
+
 }
