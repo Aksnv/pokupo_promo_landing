@@ -865,4 +865,31 @@
     line-height: 34px;
   }
 
+  /* Our mission */
+
+  .our-mission {
+    height: 559px;
+    padding-top: 228px;
+  }
+
+  .our-mission h2 {
+    margin-bottom: 2px;
+  }
+
+  .our-mission h2 > span {
+    position: relative;
+    top: -10px;
+    display: block;
+  }
+
+  .our-mission p {
+    width: 300px;
+  }
+
+  .our-mission p::before {
+    top: -208px;
+    left: 101px;
+
+  }
+
 }
