@@ -1,0 +1,70 @@
+@media screen and (max-width: 1024px) {
+  
+  .container {
+    width: 670px;
+  }
+
+  /* Header */
+
+  .header {
+    background-position: -235px top;
+  }
+
+  .header__logo {
+    margin-bottom: 77px;
+  }
+
+  .header__logo a {
+    margin-top: 40px;
+  }
+
+  .header__menu {
+    display: none; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 750px;
+    height: 1080px;
+    text-align: center;
+    background-color: #3d3d3d;
+    z-index: 2;
+  }
+
+  .header__menu li {
+    display: block;
+  }
+
+  .header__menu--hamburger {
+    display: block;
+  }
+
+  .header__promo h1 {
+    margin-left: 0;
+  }
+
+  .header__promo ul {
+    margin-bottom: 49px;
+    padding-left: 39px;
+  }
+
+  .header__promo li {
+    font-size: 20px;
+    line-height: 31px;
+  }
+
+  .header__promo li:last-of-type span {
+    position: relative;
+    top: -7px;
+    display: block;
+  }
+
+  a.open-shop {
+    width: 345px;
+    height: 70px;
+    font-size: 24px;
+    line-height: 70px;
+    margin-left: 20px;
+    border-radius: 35px;
+  }
+
+}

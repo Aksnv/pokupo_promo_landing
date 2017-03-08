@@ -124,6 +124,22 @@ ul {
   right: -113px;
 }
 
+.header__menu--hamburger {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 20px;
+  height: 14px;
+  background-image: url("../images/sprite.fw.png");
+  background-position: -488px -8px;
+  cursor: pointer;
+}
+
+.header__menu--hamburger:hover {
+  opacity: 0.8;
+}
+
 .header__menu li {
   display: inline-block;
   padding-left: 13px;
