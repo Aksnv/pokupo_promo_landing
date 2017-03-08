@@ -438,3 +438,69 @@
   }
 
 }
+
+@media screen and (max-width: 669px) {
+  
+  .container {
+    width: 300px;
+  }
+
+  /* Header */
+
+  .header {
+    background-position: -337px top;
+  }
+
+  .header__logo {
+    margin-bottom: 81px;
+  }
+
+  .header__logo a {
+    margin-top: 30px;
+  }
+
+  .header__menu--hamburger {
+    top: 30px;
+  }
+
+  .header__promo h1 {
+    width: 270px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .header__promo ul {
+    margin-top: 40px;
+    margin-bottom: 22px;
+    padding-left: 22px;
+  }
+
+  .header__promo li {
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 16px;
+  }
+
+  .header__promo li::before {
+    top: 7px;
+    left: -23px;
+    width: 15px;
+    height: 13px;
+    background-position: -303px -8px;
+  }
+
+  .header__promo em {
+    display: block;
+    font-style: normal;
+  }
+
+  .header__promo li:last-of-type span {
+    top: -4px;
+  }
+
+  a.open-shop {
+    width: 300px;
+    margin-left: 0;
+  }
+
+}
