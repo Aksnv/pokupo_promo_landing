@@ -1023,14 +1023,121 @@ a.golos-link {
 /* Updating */
 
 .updating {
+  position: relative;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 46px;
+  padding-bottom: 97px;
   background-color: #efece7;
+}
+
+.updating h2 {
+  font-family: 'proxima_nova_ltlight';
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.updating p {
+  font-family: 'proxima_nova_blblack';
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.updating span {
+  display: block;
+  font-family: 'proxima_nova_ltlight';
+  font-size: 15px;
+  font-weight: 300;
+  padding-top: 11px;
+  padding-bottom: 15px;
+}
+
+.updating__hashtag {
+  width: 500px;
+  height: 132px;
+  margin: 0 auto;
+  border: 2px solid #ffa800;
+}
+
+.updating__hashtag h3 {
+  font-family: 'proxima_nova_blblack';
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 118px;
+  margin: 0;
+  background: linear-gradient(#ffa800, #f59019);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ffa800;
+}
+
+.updating__social {
+  position: absolute;
+  top: 261px;
+  left: calc(50% - 108px);
+  width: 216px;
+  height: 54px;
+  margin: 0 auto;
+  background-color: #00a651;
 }
 
 .updating__social li {
   display: inline-block;
+  vertical-align: top;
+}
+
+.updating__social-link {
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("../images/sprite.fw.png");
+}
+
+.updating__social-link:hover {
+  opacity: 0.8;
+}
+
+.updating__social-link--1 {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  width: 25px;
+  height: 16px;
+  background-position: -439px -40px;
+}
+
+.updating__social-link--2 {
+  position: absolute;
+  top: 15px;
+  left: 66px;
+  width: 11px;
+  height: 22px;
+  background-position: -311px -40px;
+}
+
+.updating__social-link--3 {
+  position: absolute;
+  top: 16px;
+  left: 91px;
+  width: 29px;
+  height: 21px;
+  background-position: -400px -40px;
+}
+
+.updating__social-link--4 {
+  position: absolute;
+  top: 15px;
+  left: 134px;
+  width: 13px;
+  height: 24px;
+  background-position: -375px -40px;
+}
+
+.updating__social-link--5 {
+  position: absolute;
+  top: 17px;
+  left: 162px;
+  width: 28px;
+  height: 18px;
+  background-position: -335px -40px;
 }
 
 /* Footer */
