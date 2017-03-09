@@ -517,9 +517,40 @@
     margin-top: 30px;
   }
 
+  .header__menu {
+    top: 0;
+    left: -30px;
+    width: 360px;
+    height: 640px;
+  }
+
   .header__menu--hamburger {
     top: 30px;
   }
+
+  /* Выпадающее меню */
+
+  .header__menu--open + .header__menu--hamburger {
+    top: 30px;
+  }
+
+  .header__menu--open .header__menu-link {
+    font-size: 15px;
+  }
+
+  .header__menu--open ul {
+    margin-top: 166px;
+  }
+
+  .header__menu--open li {
+    margin-bottom: 11px;
+  }
+
+  .header__social {
+    top: 513px;
+  }
+
+  /* END - Выпадающее меню */
 
   .header__promo h1 {
     width: 270px;
