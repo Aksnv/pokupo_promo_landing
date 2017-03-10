@@ -60,9 +60,7 @@ body {
 }
 
 .container--outer {
-  position: relative;
   width: 1380px;
-  margin: 0 auto;
 }
 
 h2 {
@@ -83,6 +81,10 @@ ul {
   padding-left: 0;
 }
 
+strong {
+  font-family: 'proxima_nova_thextrabold';
+}
+
 .nowrap {
   white-space: nowrap;
 }
@@ -101,18 +103,38 @@ ul {
   opacity: 0.8;
 }
 
+a[href^=tel] {
+  text-decoration: none;
+  color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    padding-right: 9px
+}
+
+::-webkit-scrollbar-track {
+    background: #fff
+}
+
+::-webkit-scrollbar-thumb {
+    color: #ffa800;
+    background: #ffa800
+}
+
 /* Header */
 
 .header {
   height: 900px;
   background-image: url("../images/bg-top.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   color: #fff;
 }
 
 .header__logo {
   float: left;
+  margin-left: 99px; 
   margin-bottom: 120px;
 }
 
@@ -127,9 +149,8 @@ ul {
 }
 
 .header__menu {
-  position: absolute;
-  top: 60px;
-  right: -113px;
+  float: right;
+  margin-top: 60px;
 }
 
 .header__menu--hamburger {
@@ -151,8 +172,11 @@ ul {
 
 .header__menu li {
   display: inline-block;
-  padding-left: 13px;
-  padding-right: 13px;
+  padding-right: 26px;
+}
+
+.header__menu li:last-child {
+  padding-right: 0;
 }
 
 .header__menu-link {
@@ -296,12 +320,13 @@ ul {
   font-size: 50px;
   line-height: 60px;
   font-weight: 900;
-  margin-left: 116px;
+  margin-left: 118px;
+  margin-bottom: 34px;
 }
 
 .header__promo ul {
-  padding-left: 155px;
   margin-bottom: 45px;
+  padding-left: 155px;
 }
 
 .header__promo li {
@@ -333,6 +358,10 @@ ul {
 
 .header__promo a:hover {
   opacity: 0.8;
+}
+
+.header__promo em {
+  font-style: normal;
 }
 
 a.open-shop {
@@ -437,15 +466,15 @@ a.open-shop {
 
 .control-panel ul {
   position: relative;
-  width: 575px;
-  margin-bottom: 173px;
+  width: 577px;
+  margin-bottom: 170px;
   padding-left: 118px;
 }
 
 .control-panel ul::after {
   position: absolute;
   top: -179px;
-  right: -536px;
+  right: -534px;
   content: "";
   display: block;
   width: 410px;
@@ -460,8 +489,8 @@ a.open-shop {
 
 .control-panel li::before {
   position: absolute;
-  top: 9px;
-  left: -10px;
+  top: 8px;
+  left: -8px;
   content: "";
   display: block;
   width: 4px;
@@ -649,6 +678,10 @@ a.open-shop {
   padding-top: 106px;
 }
 
+.information-channels em {
+  font-style: normal;
+}
+
 .information-channels__top {
   padding-bottom: 100px;
 }
@@ -725,8 +758,8 @@ a.open-shop {
 }
 
 .information-channels__top-block--youtube li::before {
-  top: 9px;
-  left: -10px;
+  top: 10px;
+  left: -9px;
 }
 
 .information-channels__top-block--why {
@@ -748,8 +781,8 @@ a.open-shop {
 }
 
 .information-channels__top-block--why li::before {
-  top: 9px;
-  left: -10px;
+  top: 10px;
+  left: -9px;
 } 
 
 .information-channels__top-block--android {
@@ -757,7 +790,7 @@ a.open-shop {
   position: relative;
   width: 345px;
   margin-top: 255px;
-  margin-right: 15px;
+  margin-right: 13px;
 }
 
 .information-channels__top-block--android::before {
@@ -1052,7 +1085,7 @@ a.golos-link {
 
 .synergetic-organization a {
   display: inline-block;
-  font-family: 'proxima_nova_rgbold';
+  font-family: 'proxima_nova_thextrabold';
   font-size: 25px;
   font-weight: 700;
   line-height: 25px;
@@ -1187,6 +1220,10 @@ a.golos-link {
   font-family: 'proxima_nova_blblack';
   font-size: 20px;
   font-weight: 900;
+}
+
+.updating em {
+  font-style: normal;
 }
 
 .updating span {
@@ -1332,11 +1369,26 @@ a.golos-link {
   padding-top: 10px;
 }
 
-/* Adaptive layout styles */ 
+/* Adaptive layout styles */
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 1420px) {
+
+  .container--outer {
+    width: 1180px;
+  }
+
+  /* Header */
+
+  .header__logo {
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 1220px) {
   
-  .container {
+  .container,
+  .container--outer {
     width: 670px;
   }
 
@@ -1344,7 +1396,7 @@ a.golos-link {
 
   .header {
     height: 874px;
-    background-position: -185px top;
+    background-position: -121px top;
   }
 
   .header__logo {
@@ -1358,7 +1410,7 @@ a.golos-link {
   .header__menu {
     display: none; 
     position: absolute;
-    top: 0;
+    top: -60px;
     left: -40px;
     width: 750px;
     height: 1080px;
@@ -1401,6 +1453,7 @@ a.golos-link {
 
   .header__menu--open li {
     margin-bottom: 21px;
+    padding-right: 0;
   }
 
   .header__menu--open ~ .header__social {
@@ -1519,7 +1572,7 @@ a.golos-link {
   /* Control panel */
 
   .control-panel {
-    min-height: 447px;
+    min-height: 450px;
   }
 
   .control-panel h2 {
@@ -1567,6 +1620,11 @@ a.golos-link {
 
   .partner-program__sale-item::before {
     top: 9px;
+  }
+
+  .partner-program__sale-item--1,
+  .partner-program__sale-item--2 {
+    margin-right: 0;
   }
 
   .partner-program__sale-item--1::before {
@@ -1675,6 +1733,7 @@ a.golos-link {
     top: 111px;
     left: 183px;
     width: 310px;
+    margin-right: 0;
   }
 
   .information-channels__top-block--why span {
@@ -1765,7 +1824,7 @@ a.golos-link {
   /* Synergetic organization */
 
   .synergetic-organization {
-    background-position: -427px top;
+    background-position: -362px top;
   }
 
   .synergetic-organization h2 {
@@ -1832,9 +1891,10 @@ a.golos-link {
 
 }
 
-@media screen and (max-width: 669px) {
+@media screen and (max-width: 710px) {
   
-  .container {
+  .container,
+  .container--outer {
     width: 300px;
   }
 
@@ -1842,7 +1902,7 @@ a.golos-link {
 
   .header {
     height: 857px;
-    background-position: -337px top;
+    background-position: -493px top;
   }
 
   .header__logo {
@@ -1854,7 +1914,7 @@ a.golos-link {
   }
 
   .header__menu {
-    top: 0;
+    top: -60px;
     left: -30px;
     width: 360px;
     height: 640px;
@@ -1902,8 +1962,8 @@ a.golos-link {
 
   .header__promo li {
     font-size: 18px;
-    line-height: 27px;
-    padding-bottom: 16px;
+    line-height: 26px;
+    padding-bottom: 18px;
   }
 
   .header__promo li::before {
@@ -1920,7 +1980,7 @@ a.golos-link {
   }
 
   .header__promo li:last-of-type span {
-    top: -4px;
+    top: -2px;
   }
 
   a.open-shop {
@@ -1931,12 +1991,13 @@ a.golos-link {
   /* Create shop */
 
   .create-shop {
-    min-height: 938px;
+    min-height: 968px;
   }
 
   .create-shop h2 {
-    width: 305px;
+    width: 300px;
     font-size: 25px;
+    margin-right: 0;
   }
 
   .create-shop h2::before {
@@ -1948,34 +2009,34 @@ a.golos-link {
   }
 
   .create-shop__item--1 {
-    top: 266px;
+    top: 296px;
     left: 9px;
   }
 
   .create-shop__item--2 {
-    top: 432px;
+    top: 462px;
     left: 55px;
   }
 
   .create-shop__item--3 {
-    top: 598px;
+    top: 628px;
     left: 55px;
   }
 
   .create-shop__item--4 {
-    top: 787px;
+    top: 817px;
     left: 55px;
   }
 
   .create-shop__item--5 {
-    top: 977px;
+    top: 1007px;
     left: 55px;
   }
 
   /* Control panel */
 
   .control-panel {
-    min-height: 410px;
+    min-height: 413px;
   }
 
   .control-panel h2 {
@@ -2010,15 +2071,20 @@ a.golos-link {
 
   .control-panel ul::after {
     top: 156px;
-    right: -25px;
-    width: 324px;
-    height: 258px;
-    background-size: 324px 258px;
+    right: 0;
+    width: 300px;
+    height: 239px;
+    background-size: 300px 239px;
   }
 
   .control-panel li {
     line-height: 24px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
+  }
+
+  .control-panel li::before {
+    top: 10px;
+    left: -9px;
   }
 
   /* Partner program */
@@ -2029,7 +2095,7 @@ a.golos-link {
   }
 
   .partner-program__top h2 {
-    width: 301px;
+    width: 300px;
     font-size: 25px;
     line-height: 30px;
     padding-top: 36px;
@@ -2056,8 +2122,8 @@ a.golos-link {
 
   .partner-program__income h2 {
     position: relative;
-    left: -13px;
-    width: 332px;
+    left: 0;
+    width: 100%;
     font-size: 25px;
     margin-bottom: 135px;
   }
@@ -2108,7 +2174,7 @@ a.golos-link {
   /* Information channels */
 
   .information-channels h2 {
-    width: 303px;
+    width: 300px;
     padding-top: 20px;
   }
 
@@ -2130,16 +2196,19 @@ a.golos-link {
   }
 
   .information-channels__top-block--why {
-    top: 202px;
+    top: 232px;
     left: -3px;
+    width: 300px;
+    margin-right: 0;
   }
 
-  .information-channels__top-block--youtube::after {
-    top: -25px;
-    left: -2px;
-    width: 232px;
-    height: 198px;
-    background-size: 232px 198px;
+  .information-channels__top-block--why ul {
+    padding-left: 10px;
+  }
+
+  .information-channels__top-block--why span {
+    position: static;
+    display: inline;
   }
 
   .information-channels__top-block--youtube h2,
@@ -2157,13 +2226,30 @@ a.golos-link {
     display: block;
   }
 
+  .information-channels__top-block--youtube {
+    width: 300px;
+  }
+
+  .information-channels__top-block--youtube::after {
+    top: -25px;
+    left: -2px;
+    width: 232px;
+    height: 198px;
+    background-size: 232px 198px;
+  }
+
   .information-channels__top-block--youtube h2 {
-    margin-right: 10px;
+    margin-right: 0;
     padding-top: 131px;
   }
 
   .information-channels__top-block--youtube ul {
     margin-top: 5px;
+    padding-left: 10px;
+  }
+
+  .information-channels__top-block--android {
+    width: 300px;
   }
 
   .information-channels__top-block--android::before {
@@ -2179,13 +2265,21 @@ a.golos-link {
   }
 
   .information-channels__top-block--android h2 {
-    margin-right: 45px;
     margin-bottom: 0;
     padding-top: 228px;
   }
 
   .information-channels__top-block--android ul {
     margin-bottom: 21px;
+    padding-left: 10px;
+  }
+
+  .information-channels__top-block--android p {
+    width: 300px;
+  }
+
+  .information-channels__top-block--digest {
+    width: 300px;
   }
 
   .information-channels__top-block--digest::before {
@@ -2205,9 +2299,13 @@ a.golos-link {
   }
 
   .information-channels__top-block--digest h2 {
-    margin-right: 144px;
     margin-bottom: 26px;
     padding-top: 216px;
+  }
+
+  .information-channels__top-block--digest ul {
+    width: 300px;
+    padding-left: 10px;
   }
 
   .information-channels__bottom {
@@ -2228,6 +2326,7 @@ a.golos-link {
 
   .information-channels__bottom-block--social {
     top: 201px;
+    margin-right: 0;
   }
 
   .social-link--1 {
@@ -2265,7 +2364,7 @@ a.golos-link {
   .synergetic-organization {
     height: 657px;
     background-size: 1347px 561px;
-    background-position: -362px top;
+    background-position: -511px top;
   }
 
   .synergetic-organization h2 {
