@@ -103,6 +103,10 @@ strong {
   opacity: 0.8;
 }
 
+a {
+  outline: none;
+}
+
 a[href^=tel] {
   text-decoration: none;
   color: #000;
@@ -149,8 +153,10 @@ a[href^=tel] {
 }
 
 .header__menu {
+  position: relative;
   float: right;
   margin-top: 60px;
+  z-index: 1;
 }
 
 .header__menu--hamburger {
@@ -315,7 +321,7 @@ a[href^=tel] {
 }
 
 .header__promo h1 {
-  width: 443px;
+  width: 460px;
   font-family: 'proxima_nova_blblack';
   font-size: 50px;
   line-height: 60px;
@@ -742,7 +748,7 @@ a.open-shop {
 }
 
 .information-channels__top-block--youtube h2 {
-  width: 310px;
+  width: 320px;
   text-align: left;
   padding-top: 126px;
   padding-left: 8px;
@@ -1152,7 +1158,7 @@ a.golos-link {
 
 .our-team h2 {
   position: relative;
-  width: 220px;
+  width: 230px;
   padding-top: 77px;
   padding-bottom: 13px;
 }
@@ -1248,9 +1254,9 @@ a.golos-link {
   font-weight: 900;
   line-height: 118px;
   margin: 0;
-  background: linear-gradient(#ffa800, #f59019);
+  /* background: linear-gradient(#ffa800, #f59019);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   color: #ffa800;
 }
 
@@ -1502,7 +1508,8 @@ a.golos-link {
   /* Create shop */
   
   .create-shop {
-    min-height: 571px;
+    overflow: hidden;
+    min-height: 746px;
   }
 
   .create-shop h2 {
@@ -1572,7 +1579,8 @@ a.golos-link {
   /* Control panel */
 
   .control-panel {
-    min-height: 450px;
+    overflow: hidden;
+    min-height: 620px;
   }
 
   .control-panel h2 {
@@ -1886,7 +1894,7 @@ a.golos-link {
   }
 
   .footer__block--phone {
-    width: 167px;
+    width: 172px;
   }
 
 }
@@ -1949,7 +1957,7 @@ a.golos-link {
   /* END - Выпадающее меню */
 
   .header__promo h1 {
-    width: 270px;
+    width: 280px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -1991,7 +1999,7 @@ a.golos-link {
   /* Create shop */
 
   .create-shop {
-    min-height: 968px;
+    min-height: 1143px;
   }
 
   .create-shop h2 {
@@ -2002,6 +2010,21 @@ a.golos-link {
 
   .create-shop h2::before {
     display: none;
+  }
+
+  .create-shop h2::after {
+    position: absolute;
+    top: 1097px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1px;
+    background-color: #ccc;
+  }
+
+  .create-shop span {
+    top: 0;
   }
 
   .create-shop__item::before {
@@ -2036,7 +2059,7 @@ a.golos-link {
   /* Control panel */
 
   .control-panel {
-    min-height: 413px;
+    min-height: 583px;
   }
 
   .control-panel h2 {
@@ -2051,17 +2074,6 @@ a.golos-link {
 
   .control-panel h2 > span {
     padding-right: 0;
-  }
-
-  .control-panel h2::before {
-    position: absolute;
-    top: -46px;
-    left: 0;
-    content: "";
-    display: block;
-    width: 300px;
-    height: 1px;
-    background-color: #ccc;
   }
 
   .control-panel ul {
@@ -2132,6 +2144,10 @@ a.golos-link {
     display: none;
   }
 
+  .partner-program__income h2 > span {
+    top: -1px;
+  }
+
   .partner-program__income ul {
     padding-bottom: 41px;
   }
@@ -2180,7 +2196,7 @@ a.golos-link {
 
   .information-channels h2 > span {
     position: relative;
-    top: -2px;
+    top: -1px;
   }
 
   .information-channels__top {
