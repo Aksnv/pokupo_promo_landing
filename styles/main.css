@@ -815,7 +815,6 @@ a.open-shop {
   height: 52px;
   background-image: url("../images/sprite.png");
   background-position: -587px -100px;
-  cursor: pointer;
 }
 
 .information-channels__top-block--android::after {
