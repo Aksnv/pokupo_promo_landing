@@ -14,7 +14,7 @@
 
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1179px) {
   
   .container,
   .container--outer {
@@ -455,7 +455,7 @@
   /* Synergetic organization */
 
   .synergetic-organization {
-    background-position: -362px top;
+    background-position: -458px top;
   }
 
   .synergetic-organization h2 {
@@ -513,16 +513,33 @@
 
   .footer__block--skype {
     width: 96px;
-    margin-right: 116px;
+    margin-right: 98px;
   }
 
   .footer__block--phone {
-    width: 172px;
+    width: 190px;
   }
 
 }
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 1023px) {
+
+/* Header */
+
+  .header {
+    height: 874px;
+    background-position: -353px top;
+  }
+
+/* Synergetic organization */
+
+  .synergetic-organization {
+    background-position: -595px top;
+  }
+
+}
+
+@media screen and (max-width: 669px) {
   
   .container,
   .container--outer {
@@ -533,7 +550,7 @@
 
   .header {
     height: 857px;
-    background-position: -493px top;
+    background-position: -369px top;
   }
 
   .header__logo {
@@ -720,6 +737,10 @@
   .control-panel li::before {
     top: 10px;
     left: -9px;
+  }
+
+  .control-panel em {
+    display: inline;
   }
 
   /* Partner program */
@@ -1003,7 +1024,7 @@
   .synergetic-organization {
     height: 657px;
     background-size: 1347px 561px;
-    background-position: -511px top;
+    background-position: -387px top;
   }
 
   .synergetic-organization h2 {
@@ -1123,6 +1144,22 @@
   .footer__block--phone {
     position: absolute;
     top: 100px;
+  }
+
+}
+
+@media screen and (max-width: 567px) {
+
+/* Header */
+
+  .header {
+    background-position: -473px top;
+  }
+
+/* Synergetic organization */
+
+  .synergetic-organization {
+    background-position: -491px top;
   }
 
 }
