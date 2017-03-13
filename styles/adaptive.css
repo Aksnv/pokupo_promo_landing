@@ -470,8 +470,8 @@
   /* Our mission */
 
   .our-mission {
-    top: -140px;
-    height: 546px;
+    height: 407px;
+    padding-top: 175px;
   }
 
   .our-mission p {
@@ -487,6 +487,7 @@
   /* Our team */
 
   .our-team {
+    padding-top: 139px;
     padding-bottom: 71px;
   }
 
@@ -1051,8 +1052,13 @@
   /* Our mission */
 
   .our-mission {
-    height: 559px;
-    padding-top: 228px;
+    height: 419px;
+    padding-top: 88px;
+  }
+
+  .our-mission::before {
+    top: -143px;
+    height: 562px;
   }
 
   .our-mission h2 {

@@ -1115,16 +1115,24 @@ a.golos-link {
 
 .our-mission {
   position: relative;
-  top: -110px;
   max-width: 1920px;
-  height: 517px;
+  height: 407px;
   margin: 0 auto;
-  padding-top: 315px;
+  padding-top: 206px;
+  color: #fff;
+}
+
+.our-mission::before {
+  position: absolute;
+  top: -110px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 517px;
   background-image: linear-gradient(150deg, #ff7635 0%, #ff7635 0%, #ffa801 100%);
   background-repeat: no-repeat;
   background-position: center top;
   background-color: #efece7;
-  color: #fff;
   z-index: -1;
 }
 
@@ -1165,13 +1173,13 @@ a.golos-link {
 .our-team h2 {
   position: relative;
   width: 100%;
-  padding-top: 77px;
+  padding-top: 187px;
   padding-bottom: 13px;
 }
 
 .our-team h2::before {
   position: absolute;
-  top: -57px;
+  top: 54px;
   left: calc(50% - 53px);
   content: "";
   display: block;
